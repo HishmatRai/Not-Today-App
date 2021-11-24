@@ -6,6 +6,7 @@ import Login from '../screens/auth/login';
 import Otp from '../screens/auth/otp';
 import SelectLocation from '../screens/selectlocation';
 import Home from '../screens/home';
+import HomeCleaning from '../screens/homeceaning';
 const Stack = createNativeStackNavigator();
 function Navigation(props) {
   return (
@@ -15,7 +16,8 @@ function Navigation(props) {
         {/* <Stack.Screen name="Login" component={Login} options={{ headerShown: false }} /> */}
         {/* <Stack.Screen name="Otp" component={Otp} options={{ headerShown: false }} /> */}
         {/* <Stack.Screen name="SelectLocation" component={SelectLocation} options={{ headerShown: false }} /> */}
-        <Stack.Screen name="Home" component={Home} options={{ headerShown: false }} />
+        {/* <Stack.Screen name="Home" component={Home} options={{ headerShown: false }} /> */}
+        <Stack.Screen name="HomeCleaning" component={HomeCleaning} options={{ headerShown: false }} />
       </Stack.Navigator>
     </NavigationContainer>
   );
