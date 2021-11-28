@@ -14,7 +14,7 @@ import Amazon from "./../../../assets/imagse/Amazon.svg";
 import Card from "./../../../assets/imagse/Card.svg";
 import Cash from "./../../../assets/imagse/Cash.svg";
 function BookingPayment(props) {
-  const [selectedPaymentMethod, setSelectedPaymentMethod] = React.useState(2);
+  const [selectedPaymentMethod, setSelectedPaymentMethod] = React.useState();
   const [carNumber, setCardNumber] = React.useState("");
   const [name, setName] = React.useState("");
   const [date, setDate] = React.useState("");

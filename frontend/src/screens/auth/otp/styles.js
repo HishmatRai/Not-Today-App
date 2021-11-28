@@ -61,5 +61,22 @@ export default StyleSheet.create({
     fontFamily: "Roboto-Bold",
     fontSize: 16,
     textAlign:"center"
+  },
+  _counter:{
+    flexDirection:"row",
+    alignItems:"center",
+    marginTop: hp("5%"),
+  },
+  resend_heading: {
+    color: "#575656",
+    fontFamily: "Roboto-Regular",
+    fontSize: 18,
+    marginRight:10
+
+  },
+  _timer:{
+    color: "#575656",
+    fontFamily: "Roboto-Regular",
+    fontSize: 10,
   }
 });

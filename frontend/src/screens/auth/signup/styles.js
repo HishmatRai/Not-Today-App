@@ -20,16 +20,17 @@ export default StyleSheet.create({
     alignItems: "center",
     alignSelf: "center",
     marginTop: hp("5%"),
+    marginHorizontal:20
   },
   _heading: {
     color: "#000000",
     fontFamily: "Roboto-Regular",
-    fontSize: 29,
+    fontSize: 25,
   },
   _app_name: {
     color: "#5EBDD7",
     fontFamily: "Roboto-Bold",
-    fontSize: 36,
+    fontSize: 30,
   },
   _line_main: {
     flexDirection: "row",

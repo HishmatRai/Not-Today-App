@@ -6,10 +6,13 @@ import {
   StatusBar,
   ImageBackground,
   TouchableOpacity,
+  Animated,
 } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import BgColorButton from "../../../components/button/bgcolorbtn";
 import ConfirmationCode from "../../../components/confirmation-code";
+import { CountdownCircleTimer } from "react-native-countdown-circle-timer";
+
 import {
   widthPercentageToDP as wp,
   heightPercentageToDP as hp,
@@ -54,7 +57,27 @@ function Otp(props) {
             inputNotFocused={inputNotFocused}
           />
         </View>
-        <Text style={styles._heading}>Recent code in 2:6</Text>
+        <View style={styles._counter}>
+          <Text style={styles.resend_heading}>Recent code in</Text>
+          <CountdownCircleTimer
+            isPlaying
+            duration={10}
+            colors={[
+              ["white", 0.4],
+              // ['#F7B801', 0.4],
+              // ['#A30000', 0.2],
+            ]}
+            size={20}
+            strokeWidth={2}
+            trailColor="#1ED760"
+          >
+            {({ remainingTime }) => (
+              <Animated.Text style={styles._timer}>
+                {remainingTime}
+              </Animated.Text>
+            )}
+          </CountdownCircleTimer>
+        </View>
         <TouchableOpacity>
           <Text style={styles._change_mon_num}>Change Phone Number</Text>
         </TouchableOpacity>
@@ -84,7 +107,7 @@ function Otp(props) {
           bgColor="#18A6CC"
           buttonValue="Continue"
           marginTop={hp("3%")}
-          path={()=> props.navigation.navigate("SelectLocation")}
+          path={() => props.navigation.navigate("SelectLocation")}
         />
       </ImageBackground>
     </View>
