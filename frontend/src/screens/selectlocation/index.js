@@ -36,14 +36,14 @@ function SelectLocation(props) {
             services, offers and {"\n"}assign suitable service providers near
             you{"\n"} to ensure the fastest service possible.
           </Text>
-          <TouchableOpacity style={styles.button}>
+          <TouchableOpacity style={styles.button} onPress={()=> props.navigation.navigate("YourLocation")}>
             <MaterialIcons name="my-location" size={24} color="white" />
             <Text style={styles.btn_text}>My current location </Text>
           </TouchableOpacity>
-          <TouchableOpacity style={styles.button}>
+          <TouchableOpacity style={styles.button} onPress={()=> props.navigation.navigate("YourLocation")}>
             <Text style={styles.btn_text}>Search location </Text>
           </TouchableOpacity>
-          <TouchableOpacity>
+          <TouchableOpacity onPress={()=> props.navigation.navigate("Home")}>
             <Text style={styles._skip_btn_text}>Skip for now</Text>
           </TouchableOpacity>
         </ScrollView>

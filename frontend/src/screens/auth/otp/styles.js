@@ -17,19 +17,19 @@ export default StyleSheet.create({
   _heading: {
     color: "#575656",
     fontFamily: "Roboto-Regular",
-    fontSize: wp("5%"),
+    fontSize: 18,
     marginTop: hp("5%"),
   },
   _change_mon_num: {
     color: "#CC1818",
     fontFamily: "Roboto-Regular",
-    fontSize: wp("5%"),
+    fontSize: 18,
     marginTop: hp("1%"),
   },
   _mob_number: {
     color: "#575656",
     fontFamily: "Roboto-Regular",
-    fontSize: wp("5%"),
+    fontSize: 18,
   },
   _header_main: {
     flexDirection: "row",
@@ -39,7 +39,7 @@ export default StyleSheet.create({
   _header_heading: {
     fontFamily: "Roboto-Bold",
     color: "#000000",
-    fontSize: wp("5%"),
+    fontSize: 16,
     marginLeft: 5,
   },
   _confirmation_code: {
@@ -53,13 +53,13 @@ export default StyleSheet.create({
   _message:{
     color: "#000",
     fontFamily: "Roboto-Regular",
-    fontSize: wp("4%"),
+    fontSize: 16,
     textAlign:"center"
   },
   _privacy_btn_text:{
     color: "#fff",
     fontFamily: "Roboto-Bold",
-    fontSize: wp("4%"),
+    fontSize: 16,
     textAlign:"center"
   }
 });

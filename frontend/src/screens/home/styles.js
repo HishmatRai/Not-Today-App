@@ -41,12 +41,12 @@ export default StyleSheet.create({
   _user_message: {
     color: "#fff",
     fontFamily: "Roboto-Bold",
-    fontSize: wp("4%"),
+    fontSize: 12,
   },
   _address: {
     color: "#fff",
     fontFamily: "Roboto-Regular",
-    fontSize: wp("3%"),
+    fontSize: 10,
   },
   _notification_icon: {
     width: 40,
@@ -77,7 +77,7 @@ export default StyleSheet.create({
   _input: {
     color: "#575656",
     fontFamily: "Roboto-Regular",
-    fontSize: wp("4.5%"),
+    fontSize: 14,
     width: "85%",
   },
   _data_main: {
@@ -110,19 +110,19 @@ export default StyleSheet.create({
   _presentage: {
     color: "#fff",
     fontFamily: "Roboto-Regular",
-    fontSize: wp("3%"),
+    fontSize: 10,
     textAlign: "center",
   },
   _discount: {
     color: "#fff",
     fontFamily: "Roboto-Regular",
-    fontSize: wp("3%"),
+    fontSize: 10,
     textAlign: "center",
   },
   _discount_title: {
     color: "#000",
     fontFamily: "Roboto-Bold",
-    fontSize: wp("2%"),
+    fontSize: 7,
     textAlign: "center",
   },
   _category_main: {
@@ -148,7 +148,7 @@ export default StyleSheet.create({
   _category_title: {
     color: "#000",
     fontFamily: "Roboto-Regular",
-    fontSize: wp("3%"),
+    fontSize: 10,
     textAlign: "center",
     marginTop: hp("1%"),
   },
@@ -162,7 +162,7 @@ export default StyleSheet.create({
   _recemmended: {
     color: "#000",
     fontFamily: "Roboto-Bold",
-    fontSize: wp("5%"),
+    fontSize: 16,
     textAlign: "center",
   },
   _see_all_btn: {
@@ -172,7 +172,7 @@ export default StyleSheet.create({
   _see_all_btn_text: {
     color: "#000",
     fontFamily: "Roboto-Regular",
-    fontSize: wp("3%"),
+    fontSize:14,
     textAlign: "center",
   },
   _rec_slider_main: {
@@ -191,7 +191,7 @@ export default StyleSheet.create({
   _rec_slider_title: {
     color: "#000",
     fontFamily: "Roboto-Regular",
-    fontSize: wp("5%"),
+    fontSize: 16,
     textAlign: "center",
     marginTop: hp("1%"),
   },
@@ -208,18 +208,18 @@ export default StyleSheet.create({
   _rating_show: {
     color: "#656565",
     fontFamily: "Roboto-Regular",
-    fontSize: wp("5%"),
+    fontSize:13,
     marginLeft: 10,
   },
   _start_heading: {
     color: "#656565",
     fontFamily: "Roboto-Regular",
-    fontSize: wp("5%"),
+    fontSize: 13,
   },
   _price_show: {
     color: "#656565",
     fontFamily: "Roboto-Regular",
-    fontSize: wp("5%"),
+    fontSize: 13,
     marginLeft: 5,
   },
 });

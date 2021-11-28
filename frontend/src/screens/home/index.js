@@ -114,10 +114,14 @@ function Home(props) {
         >
           <View style={styles._header_head_main}>
             <View style={styles._header_profile_main}>
-              <Image
-                source={require("./../../../assets/imagse/profile.jpg")}
-                style={styles._profile_img}
-              />
+              <TouchableOpacity
+                onPress={() => props.navigation.navigate("Profile")}
+              >
+                <Image
+                  source={require("./../../../assets/imagse/profile.jpg")}
+                  style={styles._profile_img}
+                />
+              </TouchableOpacity>
               <View style={{ marginLeft: 10 }}>
                 <Text style={styles._user_message}>
                   Hi Smith, Good Morning !
@@ -136,7 +140,10 @@ function Home(props) {
                   color="white"
                 />
               </TouchableOpacity>
-              <TouchableOpacity style={styles._setting_icon}>
+              <TouchableOpacity
+                style={styles._setting_icon}
+                onPress={() => props.navigation.navigate("Profile")}
+              >
                 <Feather name="settings" size={24} color="white" />
               </TouchableOpacity>
             </View>
@@ -187,7 +194,10 @@ function Home(props) {
             {CategoryList.map((v, i) => {
               return (
                 <View style={styles._category} key={i}>
-                  <TouchableOpacity style={styles._category_icon_main}>
+                  <TouchableOpacity
+                    style={styles._category_icon_main}
+                    onPress={() => props.navigation.navigate("HomeCleaning")}
+                  >
                     {v.icon}
                   </TouchableOpacity>
                   <Text style={styles._category_title}>{v.title}</Text>
@@ -198,7 +208,7 @@ function Home(props) {
 
           <View style={styles._recemmended_main}>
             <Text style={styles._recemmended}>Recommended for you</Text>
-            <TouchableOpacity style={styles._see_all_btn}>
+            <TouchableOpacity style={styles._see_all_btn}  onPress={() => props.navigation.navigate("HomeCleaning")}>
               <Text style={styles._see_all_btn_text}>See All</Text>
               <Entypo name="chevron-small-right" size={15} color="black" />
             </TouchableOpacity>
@@ -210,7 +220,11 @@ function Home(props) {
             >
               {RecommendedList.map((v, i) => {
                 return (
-                  <View style={styles._res_slider} key={i}>
+                  <TouchableOpacity
+                    style={styles._res_slider}
+                    key={i}
+                    onPress={() => props.navigation.navigate("HomeCleaning")}
+                  >
                     <Image
                       source={require("./../../../assets/imagse/sliderImage.jpg")}
                       style={styles._res_slider_img}
@@ -226,7 +240,7 @@ function Home(props) {
                         <Text style={styles._price_show}>{v.price}</Text>
                       </View>
                     </View>
-                  </View>
+                  </TouchableOpacity>
                 );
               })}
             </ScrollView>

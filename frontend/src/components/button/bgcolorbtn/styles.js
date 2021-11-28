@@ -14,7 +14,7 @@ export default StyleSheet.create({
   },
   btn_text: {
     color: "#fff",
-    fontSize: hp("3%"),
+    fontSize: 24,
     fontFamily: "Roboto-Regular",
   },
 });

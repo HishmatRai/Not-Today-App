@@ -14,8 +14,6 @@ export default StyleSheet.create({
   _image: {
     flex: 1,
     resizeMode: "cover",
-    // height: hp("100%"),
-    // width: wp("100%"),
   },
   _heading_main: {
     flexDirection: "row",
@@ -26,12 +24,12 @@ export default StyleSheet.create({
   _heading: {
     color: "#000000",
     fontFamily: "Roboto-Regular",
-    fontSize: wp("7%"),
+    fontSize: 29,
   },
   _app_name: {
     color: "#5EBDD7",
     fontFamily: "Roboto-Bold",
-    fontSize: wp("7%"),
+    fontSize: 36,
   },
   _line_main: {
     flexDirection: "row",
@@ -50,7 +48,7 @@ export default StyleSheet.create({
     textAlign: "center",
     color: "#000000",
     fontFamily: "Roboto-Regular",
-    fontSize: wp("4%"),
+    fontSize:12,
   },
   _num_login_main: {
     width: wp("100%"),
@@ -64,13 +62,13 @@ export default StyleSheet.create({
     fontFamily: "Roboto-Regular",
     color: "#000000",
     marginHorizontal: 5,
-    fontSize: wp("5%"),
+    fontSize:14,
   },
   _mob_num_heading: {
     fontFamily: "Roboto-Regular",
     color: "#8B8B8B",
     marginHorizontal: 5,
-    fontSize: wp("5%"),
+    fontSize: 14,
   },
   _social_login_main: {
     flexDirection: "row",
@@ -89,7 +87,7 @@ export default StyleSheet.create({
   _social_login_btn_text: {
     fontFamily: "Roboto-Regular",
     color: "#000000",
-    fontSize: wp("5%"),
+    fontSize:16,
     marginLeft: 5,
   },
 });

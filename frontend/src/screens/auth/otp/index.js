@@ -84,6 +84,7 @@ function Otp(props) {
           bgColor="#18A6CC"
           buttonValue="Continue"
           marginTop={hp("3%")}
+          path={()=> props.navigation.navigate("SelectLocation")}
         />
       </ImageBackground>
     </View>

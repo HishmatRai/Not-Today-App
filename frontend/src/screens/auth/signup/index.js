@@ -32,7 +32,7 @@ function Signup(props) {
           <Text style={styles._app_name}>Not Today</Text>
         </View>
 
-        <TouchableOpacity style={styles._num_login_main}>
+        <TouchableOpacity style={styles._num_login_main} onPress={()=> props.navigation.navigate("PhoneNumber")}>
           <Flag width={25} height={25} fill={"#000"} />
           <Text style={styles._mob_num_code}>+1 (000)</Text>
           <Text style={styles._mob_num_heading}>Enter your mobile number</Text>

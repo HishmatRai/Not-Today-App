@@ -16,7 +16,7 @@ export default StyleSheet.create({
   _heading: {
     color: "#000000",
     fontFamily: "Roboto-Regular",
-    fontSize: wp("6%"),
+    fontSize: 25,
     marginTop: hp("3%"),
     textAlign: "center",
   },
@@ -32,7 +32,7 @@ export default StyleSheet.create({
   _message:{
     color: "#706F6F",
     fontFamily: "Roboto-Regular",
-    fontSize: wp("4.5%"),
+    fontSize: 18,
     marginTop: hp("3%"),
     textAlign: "center",
   },
@@ -49,13 +49,13 @@ export default StyleSheet.create({
   },
   btn_text: {
     color: "#fff",
-    fontSize: hp("3%"),
+    fontSize: 24,
     fontFamily: "Roboto-Regular",
     marginLeft:10
   },
   _skip_btn_text:{
     color: "#000",
-    fontSize: hp("3%"),
+    fontSize: 24,
     fontFamily: "Roboto-Regular",
     marginLeft:10,
     marginTop:hp("3%"),

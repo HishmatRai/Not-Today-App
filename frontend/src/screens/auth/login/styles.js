@@ -6,60 +6,107 @@ import {
 export default StyleSheet.create({
   container: {
     flex: 1,
+    backgroundColor: "white",
   },
   _image: {
     flex: 1,
     resizeMode: "cover",
     height: hp("100%"),
     width: wp("100%"),
-    paddingHorizontal:20
+    paddingHorizontal: 20,
   },
   _heading: {
-    color: "#575656",
+    color: "#000",
     fontFamily: "Roboto-Regular",
-    fontSize: wp("5%"),
-    marginTop:hp("5%")
+    fontSize: 29,
+    marginTop: hp("5%"),
+    textAlign: "center",
   },
-  _header_main:{
-    flexDirection:"row",
-    alignItems:"center",
-    marginTop:hp("2%")
+  _header_main: {
+    flexDirection: "row",
+    alignItems: "center",
+    marginTop: hp("5%"),
   },
-  _header_heading:{
-    fontFamily: "Roboto-Bold",
-    color: "#000000",
-    fontSize: wp("5%"),
+  _header_heading: {
+    fontFamily: "Roboto-Regular",
+    color: "#fff",
+    fontSize: 16,
     marginLeft: 5,
   },
-  _code_picker:{
-    width:wp("35%"),
-    height:hp("5%"),
-    alignItems:"flex-start",
-    marginTop:hp("1%")
-    
+  _input_main: {
+    width: "100%",
+    height: hp("7%"),
+    marginTop: hp("5%"),
+    backgroundColor: "#E2E2E2",
+    borderRadius: 5,
+    alignItems: "center",
+    justifyContent: "center",
   },
-  _country_code_main:{
-    width:wp("90%"),
-    height:hp("7%"),
-    justifyContent:"center",
-    marginTop:hp("5%"),
-    borderBottomWidth:1,
-    borderBottomColor:"#707070",
-    flexDirection:"row",
-    alignItems:"center"
-  },
-  _input:{
-    width:wp("55%"),
+  _input: {
+    width: "90%",
     fontFamily: "Roboto-Regular",
-    fontSize: wp("6%"),
-    padding:0,
-    margin:0
+    fontSize: 13,
+    padding: 0,
+    margin: 0,
+    color: "#193628",
   },
-  _message:{
+  _logo_main: {
+    height: hp("20%"),
+    marginTop: hp("10%"),
+  },
+  _forgot_password: {
     fontFamily: "Roboto-Regular",
-    fontSize: wp("4%"),
-    color:"#575656",
-    textAlign:"center",
-    marginTop:hp("3%")
-  }
+    fontSize: 13,
+    color: "#000",
+    alignSelf: "flex-end",
+    marginTop: hp("3%"),
+  },
+  button: {
+    height: hp("6%"),
+    alignItems: "center",
+    justifyContent: "center",
+    width: "100%",
+    alignSelf: "center",
+    backgroundColor: "#18A6CC",
+    marginTop: hp("4%"),
+  },
+  btn_text: {
+    color: "#fff",
+    fontSize: 16,
+    fontFamily: "Roboto-Bold",
+  },
+  _service_provider: {
+    height: hp("6%"),
+    alignItems: "center",
+    justifyContent: "center",
+    width: "65%",
+    alignSelf: "center",
+    marginTop: hp("4%"),
+    borderWidth: 1,
+    borderColor: "#26A29D",
+  },
+  _service_provider_text: {
+    color: "#000",
+    fontSize: 16,
+    fontFamily: "Roboto-Regular",
+  },
+  _signup_main: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "center",
+    alignSelf: "center",
+    marginTop: hp("2%"),
+    marginBottom: hp("3%"),
+  },
+  _account: {
+    color: "#193628",
+    fontSize: 16,
+    fontFamily: "Roboto-Regular",
+  },
+  _signup: {
+    color: "#5EBDD7",
+    fontSize: 18,
+    fontFamily: "Roboto-Bold",
+    marginLeft: 2,
+  },
 });
